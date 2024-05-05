@@ -28,8 +28,6 @@ if (isDomainValid)
     console.log("address: %j family: IPv%s", address, family);
   });
 
-console.log(isDomainValid, argv);
-
 if (isDomainValid && dnsServer) {
   const resolver = new Resolver();
   resolver.setServers([dnsServer]);
